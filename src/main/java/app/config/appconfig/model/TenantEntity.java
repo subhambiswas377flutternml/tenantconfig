@@ -22,8 +22,12 @@ public class TenantEntity {
 
     @Column(name = "tenant_id")
     @JsonProperty("tenant_id")
-    @Id
     private String tenantId;
+
+    @Column(name = "bundle_id")
+    @JsonProperty("bundle_id")
+    @Id
+    private String bundleId;
 
     @Column(name = "firebase")
     @JsonProperty("firebase")
@@ -31,12 +35,13 @@ public class TenantEntity {
     private FirebaseConfig firebaseConfig;
 
     public TenantEntity(){}
-    public TenantEntity(String primaryColor, String onPrimary, String loginLogo, String tenantId, FirebaseConfig firebaseConfig){
+    public TenantEntity(String primaryColor, String onPrimary, String loginLogo, String tenantId, FirebaseConfig firebaseConfig, String bundleId){
         this.loginLogo=loginLogo;
         this.tenantId=tenantId;
         this.onPrimary=onPrimary;
         this.primaryColor=primaryColor;
         this.firebaseConfig=firebaseConfig;
+        this.bundleId=bundleId;
     }
 
     public FirebaseConfig getFirebaseConfig() {
@@ -59,6 +64,10 @@ public class TenantEntity {
         return primaryColor;
     }
 
+    public String getBundleId() {
+        return bundleId;
+    }
+
     public void setFirebaseConfig(FirebaseConfig firebaseConfig) {
         this.firebaseConfig = firebaseConfig;
     }
@@ -77,5 +86,9 @@ public class TenantEntity {
 
     public void setPrimaryColor(String primaryColor) {
         this.primaryColor = primaryColor;
+    }
+
+    public void setBundleId(String bundleId) {
+        this.bundleId = bundleId;
     }
 }
