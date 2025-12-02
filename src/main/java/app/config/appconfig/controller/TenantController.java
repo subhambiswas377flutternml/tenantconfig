@@ -14,7 +14,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping(value = "/tenant")
 public class TenantController {
-    private TenantService tenantService;
+    final private TenantService tenantService;
     public TenantController(TenantService tenantService){
         this.tenantService = tenantService;
     }
