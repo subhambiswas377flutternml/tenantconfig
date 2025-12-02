@@ -33,8 +33,8 @@ values(
     'allride-production.appspot.com',
 
     'https://i.ibb.co/rG08GtGs/login-logo-pa.jpg',
-    '0xFFFFFFFF',
-    '0xFFE42528',
+    '#FFFFFF',
+    '#E42528',
     '296c9201-1f46-4826-bf8e-7e4bb7bbb854',
     'com.app.plusaircrew',
     'com.app.plusaircrew'
@@ -72,8 +72,8 @@ values(
     'allride-production.appspot.com',
 
     'https://i.ibb.co/PvsBZqwM/login-logo-2r.png',
-    '0xFFFFFFFF',
-    '0xFFF84134',
+    '#FFFFFF',
+    '#F84134',
     '49185300-f991-44b8-b6ed-144d9c561de8',
     'com.app.rides234',
     'com.app.rides234'
