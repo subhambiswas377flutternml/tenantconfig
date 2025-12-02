@@ -26,10 +26,13 @@ public class TenantEntity {
     private String tenantId;
 
     @JsonIgnore
-    @Column(name = "bundle_id")
-    @JsonProperty("bundle_id")
+    @Column(name = "android_bundle_id")
     @Id
-    private String bundleId;
+    private String androidBundleId;
+
+    @JsonIgnore
+    @Column(name = "ios_bundle_id")
+    private String iosBundleId;
 
     @Column(name = "firebase")
     @JsonProperty("firebase")
@@ -37,13 +40,14 @@ public class TenantEntity {
     private FirebaseConfig firebaseConfig;
 
     public TenantEntity(){}
-    public TenantEntity(String primaryColor, String onPrimary, String loginLogo, String tenantId, FirebaseConfig firebaseConfig, String bundleId){
+    public TenantEntity(String primaryColor, String onPrimary, String loginLogo, String tenantId, FirebaseConfig firebaseConfig, String androidBundleId, String iosBundleId){
         this.loginLogo=loginLogo;
         this.tenantId=tenantId;
         this.onPrimary=onPrimary;
         this.primaryColor=primaryColor;
         this.firebaseConfig=firebaseConfig;
-        this.bundleId=bundleId;
+        this.androidBundleId=androidBundleId;
+        this.iosBundleId=iosBundleId;
     }
 
     public FirebaseConfig getFirebaseConfig() {
@@ -66,8 +70,12 @@ public class TenantEntity {
         return primaryColor;
     }
 
-    public String getBundleId() {
-        return bundleId;
+    public String getAndroidBundleId() {
+        return androidBundleId;
+    }
+
+    public String getIosBundleId() {
+        return iosBundleId;
     }
 
     public void setFirebaseConfig(FirebaseConfig firebaseConfig) {
@@ -90,7 +98,11 @@ public class TenantEntity {
         this.primaryColor = primaryColor;
     }
 
-    public void setBundleId(String bundleId) {
-        this.bundleId = bundleId;
+    public void setAndroidBundleId(String androidBundleId) {
+        this.androidBundleId = androidBundleId;
+    }
+
+    public void setIosBundleId(String iosBundleId) {
+        this.iosBundleId = iosBundleId;
     }
 }
