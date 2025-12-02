@@ -109,8 +109,8 @@ VALUES(
     '87096992381',
     'allride-production.appspot.com',
     'https://i.ibb.co/7xH1GQRf/login-logo.png',
-    '0xFFFFFFFF',
-    '#0xFFF84134',
+    '#FFFFFF',
+    '#F84134',
     '49185300-f991-44b8-b6ed-144d9c561de8',
     'com.driver.ridesdriverapp',
     'com.driver.ridesdriverapp'
