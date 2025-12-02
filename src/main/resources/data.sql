@@ -78,3 +78,40 @@ values(
     'com.app.rides234',
     'com.app.rides234'
 );
+
+INSERT INTO Tenants(
+    ANDROID_API_KEY,
+    ANDROID_APP_ID,
+    ANDROID_PROJECT_ID,
+    ANDROID_SENDER_ID,
+    ANDROID_STORAGE_BUCKET,
+    IOS_API_KEY,
+    IOS_APP_ID,
+    IOS_PROJECT_ID,
+    IOS_SENDER_ID,
+    IOS_STORAGE_BUCKET,
+    LOGIN_LOGO,
+    ON_PRIMARY,
+    PRIMARY_COLOR,
+    TENANT_ID,
+    ANDROID_BUNDLE_ID,
+    IOS_BUNDLE_ID
+)
+VALUES(
+    'AIzaSyB-wkxYczoN2PfzM5hKxTetKqZBCGnzo4o',
+    '1:87096992381:android:91264666f9cd3d27f60714',
+    'allride-production',
+    '87096992381',
+    'allride-production.appspot.com',
+    'AIzaSyB-wkxYczoN2PfzM5hKxTetKqZBCGnzo4o',
+    '1:87096992381:ios:04a36b52cd9b77f7f60714',
+    'allride-production',
+    '87096992381',
+    'allride-production.appspot.com',
+    'https://i.ibb.co/7xH1GQRf/login-logo.png',
+    '0xFFFFFFFF',
+    '#0xFFF84134',
+    '49185300-f991-44b8-b6ed-144d9c561de8',
+    'com.driver.ridesdriverapp',
+    'com.driver.ridesdriverapp'
+);
