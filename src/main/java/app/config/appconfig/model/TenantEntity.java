@@ -1,5 +1,6 @@
 package app.config.appconfig.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embedded;
@@ -24,6 +25,7 @@ public class TenantEntity {
     @JsonProperty("tenant_id")
     private String tenantId;
 
+    @JsonIgnore
     @Column(name = "bundle_id")
     @JsonProperty("bundle_id")
     @Id
